@@ -20,8 +20,13 @@ What’s the computational complexity of your solution?
 
 
 Given that it utilizes Dynamic Programming with Kahn’s algorithm to Topological Sorting, it is O(T+D), or linear.
+
+
 Are there any unusual cases that aren’t handled?
+
+
 This doesn’t handle weighted edges. However, with a simple modification, it can handle weighted edges and even negative numbers given the algorithm used to solve the DAG problem. Lastly, the first algorithm, (DagUtil.longestPathInDagFromUsingTopSort), doesn’t start from a specified vertex, the source. It generates the solution based on the entire DAG, even with multiple source vertices. This wouldn’t be correct with a constraint where the problem requires the longest path from a specific source vertex.
+
 
 What are some things you don’t like about Java?
 
@@ -31,5 +36,6 @@ I think that Java has developed into a programming language that tries to do too
 
 If you could choose any language/framework/technology stack, what would you choose and
 why?
+
 
 I would like Angular or ReactJS with Typescript on the front end, with Springboot and java on the backend. On the front end, Angular and ReactJS have tools to quickly develop stateful and reusable web interface components and Typescript would simplify the process for passing around stateful objects on the frontend and remove some of the difficulties and confusion that come with dynamically typed languages. On the backend, I'd prefer Springboot and Java because Java is itself a clear implementation of the OOP standards, and Springboot abstracts away all of the common boilerplate code that one would have to otherwise write just to make a basic API. 
